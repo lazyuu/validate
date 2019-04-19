@@ -5,7 +5,7 @@
  * Time: 10:43
  */
 
-namespace Validate\Validate;
+namespace Validate;
 
 use Swoft\App;
 
