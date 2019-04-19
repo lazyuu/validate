@@ -1,0 +1,26 @@
+{
+  "name": "lazy/validate",
+  "keywords": [
+    "validate",
+    "php",
+    "swoft"
+  ],
+  "description": "validate interface files.",
+  "type": "library",
+  "authors": [
+    {
+      "name": "lazy",
+      "email": "729011771@qq.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Validate\\": "src"
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.0",
+    "swoft/framework": "^1.0"
+  }
+}
