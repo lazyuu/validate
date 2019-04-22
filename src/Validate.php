@@ -5,7 +5,7 @@
  * Time: 10:43
  */
 
-namespace Validate;
+namespace ValidateLazy;
 
 use Swoft\App;
 
@@ -1199,7 +1199,7 @@ class Validate
      */
     protected function getRuleMsg($attribute, $title, $type, $rule)
     {
-        $lang = App::getBean(Lang::class);
+        $lang = new Lang();
         if (isset($this->message[$attribute . '.' . $type])) {
             $msg = $this->message[$attribute . '.' . $type];
         } elseif (isset($this->message[$attribute][$type])) {

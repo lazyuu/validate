@@ -5,14 +5,8 @@
  * Time: 10:43
  */
 
-namespace Validate;
+namespace ValidateLazy;
 
-use Swoft\Bean\Annotation\Bean;
-
-/**
- * @Bean()
- * @package App\Utils\think
- */
 class Lang
 {
     /**

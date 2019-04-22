@@ -5,7 +5,7 @@
  * Time: 10:43
  */
 
-namespace Validate;
+namespace ValidateLazy;
 
 /**
  * Class ValidateRule
