@@ -1,26 +1,54 @@
 {
-  "name": "lazyu/validate",
-  "keywords": [
-    "validate",
-    "php",
-    "swoft"
-  ],
-  "description": "validate interface files.",
-  "type": "library",
-  "authors": [
-    {
-      "name": "lazy",
-      "email": "729011771@qq.com"
+    "name": "lazy/validate",
+    "description": "一个适用于laravel的验证器",
+    "keywords": [
+        "lazy",
+        "validate"
+    ],
+    "homepage": "https://github.com/lazy/validate",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "lazy",
+            "email": "729011771@qq.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "illuminate/support": "^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lazy\\Validate\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Lazy\\Validate\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lazy\\Validate\\ValidateServiceProvider"
+            ],
+            "aliases": {
+                "Validate": "Lazy\\Validate\\ValidateFacade"
+            }
+        }
     }
-  ],
-  "autoload": {
-    "psr-4": {
-      "ValidateLazy\\": "src"
-    }
-  },
-  "minimum-stability": "dev",
-  "require": {
-    "php": ">=7.1",
-    "swoft/framework": "^2.0"
-  }
 }
