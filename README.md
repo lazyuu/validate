@@ -15,11 +15,10 @@ composer require lazy/validate
 <?php
 namespace App\Validate;
 
-use App\Validate\BaseValidate;
 /**
  * 文章验证器
  */
-class ArticleValidate extends BaseValidate {
+class ArticleValidate {
     //验证规则
     protected $rule =[
         'id'=>'required',
@@ -98,7 +97,7 @@ public function add(){
 ## 控制器内验证
    当然我们也允许你不创建验证类来验证数据
    ```php
-$Validate = new BaseValidate;
+$Validate = new Validate;
    
            $request_data = [
                'title'=>'我是文章的标题',
